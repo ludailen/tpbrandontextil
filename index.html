@@ -2,247 +2,197 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Brandon Textil - Sitio oficial</title>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <title>Brandon Textil - Sitio oficial</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <div class="fondoInicio">
-        <header id="header">
-            <div class="logo">
-                <a href="#" class="logoBlanco"><img src="assets/img/logo.webp" alt="Logo Brandon Textil" height="70"
-                        width="180"></a>
-                <a href="#" class="logoNegro"><img src="assets/img/logonegro.webp" alt="Logo Brandon Textil" height="70"
-                        width="180"></a>
-            </div>
-            <nav>
-                <input class="checkbox" type="checkbox">
-                <img src="assets/img/menuhamburguesa.webp" alt="menu hamburguesa" class="icono menuHamburguesa">
-                <img src="assets/img/menux.webp" alt="cierre menu" class="icono cierre">
-                <ul class="navegacion">
-                    <li><a href="#sobreNosotros">Sobre nosotros</a></li>
-                    <li><a href="#nuestrosProductos">Productos</a></li>
-                    <li><a href="#sobreDtf">DTF</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-            <div>
-                <div class="bienvenidos">
-                    <h1>Líderes en insumos textiles <br> DTF de primera calidad</h1>
-                    <p class="subtitulo">Todo lo que necesitás para tu marca, lo encontrás acá</p>
-                    <a href="#nuestrosProductos" class="botonVerMas">Ver más</a>
-                </div>
-            </div>
-        </section>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top barraNav" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a href="#"><img src="assets/img/logo.webp" alt="Logo Brandon Textil" class="img-fluid tamanioLogo"></a>
+        <button class="navbar-toggler barraNavToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon justify-content-end"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav nav100">
+            <li class="nav-item">
+              <a class="nav-link active navA" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navA" href="pages/productos.html">Productos y servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navA" href="pages/blog.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navA" href="pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navA" href="#"><img src="assets/img/carrito.png" alt="Carrito de Compras" width="28"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div id="carouselInicio" class="carousel slide carousel-fade inicio">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/astrodtf.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/plotterblog.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/dtf2.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
 
-    <main>
-        <section class="info" id="sobreNosotros">
-            <div class="pCentrado50">
+  <main>
+    <section id="sobreNosotros">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="column-12 col-sm-10 col-md-10 col-lg-7">
             <h2>Sobre Nosotros</h2>
-            <p >Somos una empresa familiar dedicada a la comercialización de insumos textiles fundada
-                en 2022. Gracias a
-                la calidad de nuestros productos y la excelencia que nos destaca en impresiones DTF, logramos
-                posicionarnos como líderes de insumos en el mercado.</p>
-            </div>
-            <div class="imgNos">
-                <img src="assets/img/local.webp" alt="Muestra de vinilos textiles" class="nos1">
-                <img src="assets/img/local1.webp" alt="Interior del negocio de Brandon Textil" class="nos2">
-            </div>
-        </section>
-
-        <section class="productosServicios" id="nuestrosProductos">
-            <h3>Nuestros productos</h3>
-            <div class="contenedorCarrousell">
-                <div class="carrousell">
-                    <div class="carousel-item active">
-                        <img src="assets/img/holo.webp" alt="Vinilo Holográfico" class="imgCarrousell">
-                        <img src="assets/img/tornasol.webp" alt="Vinilo Holográfico" class="imgCarrousell">
-                        <div class="pieImagen">
-                            <p>Vinilo Holográfico</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/glitter.webp" alt="Vinilo Glitter" class="imgCarrousell">
-                        <img src="assets/img/glittercolores.webp" alt="Carta de colores de vinilo glitter" class="imgCarrousell">
-                        <div class="pieImagen">
-                            <p>Vinilo Glitter</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/fluor.webp" alt="Vinilo Flúor" class="imgCarrousell">
-                        <img src="assets/img/calzafluor.jpg" alt="Calza con Vinilo Flúor" class="imgCarrousell">
-                        <div class="pieImagen">
-                            <p>Vinilo Flúor</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/fosfo.webp" alt="Vinilo Fosforescente" class="imgCarrousell">
-                        <img src="assets/img/remefosfo.webp" alt="Remera con Vinilo Fosforescente" class="imgCarrousell">
-                        <div class="pieImagen">
-                            <p>Vinilo Fosforescente</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/gamuzado.jpg" alt="Vinilo Gamuzado" class="imgCarrousell">
-                        <img src="assets/img/gamuzado2.webp" alt="Remera con Vinilo Gamuzado" class="imgCarrousell">
-                        <div class="pieImagen">
-                            <p>Vinilo Gamuzado</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
-            </div>
-
-            <h3>Servicios que ofrecemos</h3>
-            <div class="contenedorServicios">
-                <div class="cardServicios">
-                    <img src="assets/img/plotter.webp" alt="Servicio de máquina cortadora de vinilo">
-                    <h4 class="productoH4">Corte de Vinilo</h4>
-                    <p class="productoP">El corte de vinilo es un proceso en el que se recorta un diseño en un vinilo especial para luego transferirlo a tela mediante calor. Se utiliza para personalizar ropa.</p>
-                </div>
-
-                <div class="cardServicios">
-                    <img src="assets/img/disenografico.jpg" alt="Servicio de diseño gráfico">
-                    <h4 class="productoH4">Diseño gráfico</h4>
-                    <p class="productoP">El diseño gráfico es la creación de contenido visual utilizando tipografía, imágenes y colores para comunicar ideas o mensajes. Se aplica en medios impresos y digitales.
-                    </p>
-                </div>
-
-                <div class="cardServicios">
-                    <img src="assets/img/dtf.webp" alt="Servicio de impresión DTF">
-                    <h4 class="productoH4">Impresión DTF</h4>
-                    <p class="productoP">El DTF es una técnica de impresión en la que se transfiere tinta a un film, que luego se aplica a tejidos mediante calor. Ideal para crear diseños detallados y coloridos en prendas y textiles.</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="sobreDtf">
-            <div class="dtf">
-                <div class="bloqueDtf">
-                    <div class="textoDtf">
-                        <h4 class="dtfH4">¿Qué es el DTF?</h4>
-                        <p>
-                            El DTF es un método de impresión por transferencia que consiste en imprimir por medio de una
-                            impresora o plotter de inyección de tinta sobre una película semi transparente, para luego
-                            ser
-                            transferida por medio de calor a textiles y materiales rígidos. <br>
-                            Para su fabricación se utilizan plotters o impresoras de inyección de tinta diseñados
-                            especialmente
-                            para la impresión de transfer, lo que permite obtener resultados fotográficos y sin límite
-                            de
-                            colores, y debido a que es capaz de imprimir tinta blanca, funciona perfecto para estampar
-                            textiles
-                            de cualquier color obteniendo colores vibrantes.
-                        </p>
-                        <br>
-                    </div>
-                    <div class="videoDtf">
-                        <iframe src="https://www.youtube.com/embed/AbNHi6lCmpI?si=Mo3MYgR23Y5-6xCo"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="bloqueDtf">
-                    <div class="textoDtf">
-                        <h4 class="dtfH4">Beneficios del DTF</h4>
-                        <ol>
-                            <li>Imprime sobre Algodón y Poliéster y en cualquier color de fondo, blanco, negro, rojo,
-                                etc</li>
-                            <li>Posibilidad de imprimir color blanco</li>
-                            <li>Alta resistencia a los lavados</li>
-                            <li>Excelente elasticidad de la tinta.</li>
-                            <li>No deja fondo en el diseño (solo se transfiere el área que tiene tinta)</li>
-                        </ol>
-                    </div>
-
-                    <div class="videoDtf">
-                        <iframe src="https://www.youtube.com/embed/Wj6elmyOz0c?si=kbH9VM7HzE_PXUxy"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="bloqueDtf">
-                    <div class="textoDtf">
-                        <h4 class="dtfH4">DTF vs Vinilo: ¿cuál es mejor?</h4>
-                        <p>La impresión DTF es ideal para prendas textiles cuando se requiere imprimir imágenes complejas, detalladas y con múltiples colores, como fotos o gráficos con degradados. Es compatible con una amplia variedad de tejidos y mantiene una buena durabilidad. Tiene un costo mayor en equipo y material. <br>
-                        Por otro lado, el corte de vinilo es más económico y rápido para diseños simples como nombres o logos. Sin embargo, su acabado es más limitado y no es tan cómodo al tacto en grandes superficies. El vinilo es resistente, pero puede despegarse o desgastarse con el tiempo.</p>
-                        <br>
-                        <p>En resumen, DTF es mejor para prendas textiles si valoras flexibilidad, calidad en gráficos complejos y durabilidad, mientras que el vinilo es más adecuado para diseños sencillos y producciones rápidas. Todo dependerá de lo que quieras lograr</p>
-                    </div>
-                    <div class="videoDtf">
-                        <img src="assets/img/dtfvsvninilo.jpg" alt="Diferencias entre vinilo y DTF en remera estampada">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <div class="contenedorForm">
-                <h3>¿Querés dejarnos un comentario o sugerencia? </h3>
-                <form action="#" class="formulario" onsubmit="mostrarExito()">
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required
-                        autocomplete="off">
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" required
-                        autocomplete="off">
-                    <input type="email" id="correo" name="email" placeholder="Ingresá tu mail" required
-                        autocomplete="off">
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresá tu teléfono"
-                        autocomplete="off">
-                    <textarea name="descripcion" id="des" cols="30" rows="10" maxlength="300" required
-                        placeholder="Dejá tu comentario" autocomplete="off"></textarea>
-                    <div class="botonSubmit">
-                        <input type="submit">
-                    </div>
-                </form>
-            </div>
-        </section>
-        <aside>
-            <div class="sectorContacto">
-                <a href="https://www.instagram.com/brandontextil/" target="_blank">
-                    <img src="assets/img/instagram.webp" alt="Instagram" class="imgOriginal">
-                    <img src="assets/img/ig2.webp" alt="Instagram" class="iconosHover">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100089784325977&locale=es_LA" target="_blank">
-                    <img src="assets/img/facebook.webp" alt="Facebook" class="imgOriginal">
-                    <img src="assets/img/facebook2.webp" alt="Facebook" class="iconosHover">
-                </a>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                    <img src="assets/img/whatsapp.webp" alt="WhatsApp" class="imgOriginal">
-                    <img src="assets/img/wsp.webp" alt="WhatsApp" class="iconosHover">
-                </a>
-            </div>
-        </aside>
-    </main>
-
-    <footer id="dtf">
-        <div class="footerInfo">
-            <img src="assets/img/ludmila.webp" alt="Foto de Ludmila Gutierrez" width="150">
-            <ul>
-                <li>Ludmila Gutierrez</li>
-                <li>10/12/2000</li>
-                <li><a href="mailto:ludmila.gutierrez@davinci.edu.ar">ludmila.gutierrez@davinci.edu.ar</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/ludmila-ailen-gutierrez/" target="_blank">
-                        <img src="assets/img/social.webp" alt="LinkedIn de Ludmila Gutierrez" width="30"></a>
-                </li>
-            </ul>
+            <p> Somos una empresa familiar especializada en la comercialización de insumos textiles, fundada en 2022. Desde nuestros inicios, nos comprometimos con la calidad y la innovación en cada uno de nuestros productos, ganándonos la confianza de nuestros clientes y destacándonos especialmente en el ámbito de impresiones DTF. <br> Esto nos permitió posicionarnos como líderes en el mercado de insumos textiles, ofreciendo soluciones que satisfacen las necesidades de un sector en constante evolución.
+            </p>
+          </div>
         </div>
-    </footer>
+          <div class="row justify-content-center">
+            <div class="column-12 col-sm-10 col-md-6 col-lg-6">
+              <img src="assets/img/local.webp" alt="Muestra de vinilos textiles" class="img-fluid maxImg">
+            </div>
+            <div class="column-12 col-sm-10 col-md-6 col-lg-6">
+              <img src="assets/img/local.jpg" alt="Interior del negocio de Brandon Textil" class="img-fluid maxImg">
+            </div>
+          </div>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section id="nuestrosProductos">
+      <div class="container-fluid servicios">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h3 class="text-center">Servicios que ofrecemos</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
+              <div class="card cardServicios">
+                <img src="assets/img/plotter.jpg" class="card-img-top img-fluid" alt="Servicio de máquina cortadora de vinilo">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Corte de Vinilo</h5>
+                  <p class="card-text text-center">El corte de vinilo es un proceso en el que se recorta un diseño en un vinilo
+                    especial para luego transferirlo a tela mediante calor. Se utiliza para personalizar ropa.</p>
+                  <a href="pages/detalle_corte.html" class="btn btn-primary botonCard">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
+              <div class="card cardServicios">
+                <img src="assets/img/disenografico.jpg" class="card-img-top img-fluid" alt="Servicio de diseño gráfico">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Diseño gráfico</h5>
+                  <p class="card-text text-center">El diseño gráfico es la creación de contenido visual utilizando tipografía,
+                    imágenes y colores para comunicar ideas o mensajes. Se aplica en medios impresos y digitales.</p>
+                  <a href="pages/detalle_disenio.html" class="btn btn-primary botonCard">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-8 col-lg-4">
+              <div class="card cardServicios">
+                <img src="assets/img/dtf.webp" class="card-img-top img-fluid" alt="Servicio de impresión DTF">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Impresión DTF</h5>
+                  <p class="card-text text-center">DTF es una técnica de impresión en la que se transfiere tinta a un film, que luego se aplica a tejidos mediante calor. Ideal para crear diseños detallados y coloridos en prendas y textiles.</p>
+                  <a href="pages/detalle_dtf.html" class="btn btn-primary botonCard">Ver más</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-3 mb-3">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-sm-12 col-md-10 col-lg-6">
+            <h4 class="enlaceBlog"><a href="">¿Qué es el DTF?</a></h4>
+            <p>El DTF es un método de impresión por transferencia que consiste en imprimir por medio de una
+              impresora o plotter de inyección de tinta sobre una película semi transparente, para luego
+              ser transferida por medio de calor a textiles y materiales rígidos. <br>
+              Para su fabricación se utilizan plotters o impresoras de inyección de tinta diseñados
+              especialmente para la impresión de transfer, lo que permite obtener resultados fotográficos y sin límite
+              de colores, y debido a que es capaz de imprimir tinta blanca, funciona perfecto para estampar
+              textiles de cualquier color obteniendo colores vibrantes.
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-10 col-lg-6">
+            <iframe src="https://www.youtube.com/embed/AbNHi6lCmpI?si=Mo3MYgR23Y5-6xCo" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <div class="sectorContacto">
+          <a href="https://www.instagram.com/brandontextil/" target="_blank">
+              <img src="assets/img/instagram.webp" alt="Instagram" class="imgOriginal">
+              <img src="assets/img/ig2.webp" alt="Instagram" class="iconosHover">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100089784325977&locale=es_LA" target="_blank">
+              <img src="assets/img/facebook.webp" alt="Facebook" class="imgOriginal">
+              <img src="assets/img/facebook2.webp" alt="Facebook" class="iconosHover">
+          </a>
+          <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+              <img src="assets/img/whatsapp.webp" alt="WhatsApp" class="imgOriginal">
+              <img src="assets/img/wsp.webp" alt="WhatsApp" class="iconosHover">
+          </a>
+      </div>
+     </aside>
+  </main>
+  <footer class="container-fluid">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 footerImg">
+        <img src="assets/img/ludmila.jpg" class="img-fluid" alt="Foto de Ludmila Gutierrez" width="150">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 footerLista">
+        <div class="listaFooter">
+          <p>Ludmila Gutierrez</p>
+          <p>10/12/2000</p>
+          <p><a href="mailto:ludmila.gutierrez@davinci.edu.ar">ludmila.gutierrez@davinci.edu.ar</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/ludmila-ailen-gutierrez/" target="_blank">
+              <img src="assets/img/social.webp" alt="LinkedIn de Ludmila Gutierrez" width="30"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>

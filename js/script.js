@@ -1,31 +1,35 @@
-//Header sticky
-const header = document.getElementById("header");
-const sticky = header.offsetTop;
-
-function checkStickyHeader() {
-  if (window.scrollY > sticky) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-}
-window.onscroll = function () {
-  checkStickyHeader();
-};
-
-
-//Carrousell
-let currentIndex = 0;
-function moveSlide(direction) {
-    const slides = document.querySelectorAll('.carousel-item');
-    const totalSlides = slides.length;
-    slides[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-    slides[currentIndex].classList.add('active');
-}
-setInterval(() => moveSlide(1), 5000);
+'use strict';
 
 //Form enviado
 function mostrarExito(){
   alert('Formulario enviado :)');
 }
+
+const $imagenGrande = document.querySelector('#grande');
+const $imagenes = document.querySelectorAll('.div1 img');
+
+	for (const $imagen of $imagenes) {
+	    $imagen.addEventListener('click', function(evento){
+	        console.log(evento.currentTarget);
+	        const srcImg = evento.currentTarget.src;
+	        const altImg = evento.currentTarget.alt;
+	        $imagenGrande.src = srcImg;
+	        $imagenGrande.alt = altImg;
+	    })
+} 
+
+//Validar cantidad seleccionada para agregar al carrito
+const $formCarrito = document.getElementById('formCarrito');
+$formCarrito.addEventListener('click', function(evento) {
+  evento.preventDefault();
+
+  const $cantidad = document.getElementById('inputCantidad').value;
+  const $alerta = document.getElementById('alerta');
+
+  $alerta.textContent = '';
+
+  if ($cantidad <= 0 || $cantidad >100) {
+    $alerta.textContent = 'Ingresá una cantidad válida';
+    return;
+  }
+});
