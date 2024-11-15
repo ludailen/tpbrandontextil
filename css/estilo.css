@@ -250,11 +250,12 @@ iframe {
 #alerta {
     color: red;
 }
-
-.acordionPropio {
+.acordionPropio{
+    font-size: 1em;
+}
+.acordionPropio button {
     border: none;
     background-color: transparent;
-    font-size: 1em;
     color: blue;
 }
 
