@@ -316,7 +316,7 @@ footer {
 }
 
 /**********************MOBILE*****************************/
-@media (min-width: 411px) and (max-width:767.98px) {
+@media (min-width: 300px) and (max-width:767.98px) {
     /***NAV***/
     .nav100 {
         margin-top: 20px;
